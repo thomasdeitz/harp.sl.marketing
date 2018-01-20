@@ -1,88 +1,89 @@
 body {
-  font-family: $sans-font-family;
-  font-weight:300;
-  font-size: $base-font-size;
-  line-height:$base-font-size*1.75;
-  color: map-get($colors, black);
-
-  @media screen and (max-width: 768px ) {
-    //font-size: $small-font-size*1.5;
-  }
-  
-  	h1,h2,h3,h4,h5,h6 { //reset
-	  margin:0;
-	  font-weight: 300;
-	}
-	
-	h1 {
-	  font-size: $h1-font-size;
-	  font-weight: 900;
-	}
-	
-	h2 {
-	  font-size: $h2-font-size;
-	  color: map-get($colors, gray);
-	  text-align: center;
-	
-	  & + & {
-	    margin-top:0;
-	  }
-	}
-	
-	h3 {
-	  text-align: center;
-	  font-weight: 900;
-	  font-size: $h3-font-size;
-	}
-	
-	h4 {
-	  font-size: $h4-font-size;
-	  color: map-get($colors, gray);
-	}
-	
-	h5 {
-	  text-align: center;
-	  font-weight: 900;
-	  font-size: $h5-font-size;
-	}
-	
-	h6 {
-	  text-align: center;
-	  text-transform: uppercase;
-	  font-size: $h6-font-size;
-	  color: map-get($colors, gray);
-	}
+    color: map-get($colors,black);
+    font-family: $sans-font-family;
+    font-size: $base-font-size;
+    font-weight: 300;
+    line-height: 1.75;
+    h1, h2, h3, h4, h5, h6 {
+        //reset margin: 0;
+        font-weight: 300;
+    }
+    h1 {
+        font-size: $h1-font-size;
+        font-weight: 900;
+        @media screen and (max-width:$on-palm ) {
+            font-size: $h2-font-size;
+        }
+    }
+    h2 {
+        color: map-get($colors,gray);
+        font-size: $h2-font-size;
+        text-align: center;
+        @media screen and (max-width:$on-palm ) {
+            font-size: $h3-font-size;
+        }
+        & + & {
+            margin-top: 0;
+        }
+    }
+    h3 {
+        font-size: $h3-font-size;
+        font-weight: 900;
+        text-align: center;
+        @media screen and (max-width:$on-palm ) {
+            font-size: $h4-font-size;
+        }
+    }
+    h4 {
+        color: map-get($colors,gray);
+        font-size: $h4-font-size;
+        @media screen and (max-width:$on-palm ) {
+            font-size: $h5-font-size;
+        }
+    }
+    h5 {
+        font-size: $h5-font-size;
+        font-weight: 900;
+        text-align: center;
+        @media screen and (max-width:$on-palm ) {
+            font-size: $h6-font-size;
+        }
+    }
+    h6 {
+        color: map-get($colors,gray);
+        font-size: $h6-font-size;
+        text-align: center;
+        text-transform: uppercase;
+    }
 }
 
 a {
-  position:relative;
-  display:inline-block;
-  color: map-get($colors, gray);
-  text-decoration: none;
-  transform-origin: center center;
-  transition: transform $base-trans-duration $base-bezier;
-  
-  &[href="#contactUs"] {
-	  display:inline-block;
-	  padding:$tight-padding $base-padding;
-	  border-radius: $border-radius;
-	  background-color: map-get($colors, black);
-	  color: map-get($colors, white);
-	  
-	  &:hover {
-	    transform:scale(1.1);
-	  }
-  }
+    color: map-get($colors,gray);
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    transform-origin: center center;
+    transition: transform $base-trans-duration $base-bezier;
+    &[href="#contactUs"] {
+        background-color: map-get($colors,black);
+        border-radius: $border-radius;
+        color: map-get($colors,white);
+        display: inline-block;
+        padding: $tight-padding $base-padding;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
-
 strong, b {
-  font-weight:700;
+    font-weight: 700;
 }
-
 small {
-  font-size: $small-font-size;
+    font-size: $small-font-size;
 }
-
 p {
-	margin-bottom: $base-padding;
+    margin-bottom: $base-padding;
+    &:last-child {
+        text-align: center;
+    }
 }

@@ -1,5 +1,6 @@
 #contactUs {
 	font-family: $sans-font-family;
+	margin:0px;
 	
 	fieldset {
 		border:none;
@@ -19,6 +20,7 @@
     font-size: $h6-font-size;
     width:100%;
     font-weight: 700;
+    margin-top: $base-input-padding;
     margin-bottom: $base-input-padding;
     background-color: transparent;
     padding: $base-input-padding;
@@ -30,9 +32,13 @@
       color: rgba(map-get($colors, black), $base-opacity);
       font-weight: 700;
     }
+    
+    :focus {
+	    border: $border-width solid rgba(map-get($colors, white), 1);
+    }
   }
   
-  input {
+  input:not([type="submit"]) {
     border:none;
     border-radius: none;
     font-weight: bold;
@@ -53,10 +59,11 @@
     }
     
     :focus {
-	    border-bottom: $border-width solid rgba(map-get($colors, black), 1);
+	    border-bottom: $border-width solid rgba(map-get($colors, white), 1);
     }
-    
-    &[type="submit"] {
+  }
+  
+  input[type="submit"] {
 		display:inline-block;
 		border:0px;
 		padding:$tight-padding $base-padding;
@@ -70,5 +77,4 @@
 			transform: scale(1.1);
 		}
 	  }
-  }
 }

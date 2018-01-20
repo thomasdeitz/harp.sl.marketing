@@ -24,7 +24,7 @@
 	}
 	
 	// Fires display elements in view on scroll
-	window.onscroll = function() {onScroll("p")};
+	window.onscroll = function() {onScroll("p");onScroll("li");};
 	
 	// Removes loading state class once all assets are loaded into the dom
 	document.onreadystatechange = function () {

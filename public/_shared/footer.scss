@@ -3,5 +3,6 @@
   color: map-get($colors, white);
   padding: $base-padding 0;
   text-align:center;
+  border-top:1px solid rgba(map-get($colors, white), $base-opacity);
   box-shadow: 0 50vh 0 50vh map-get($colors, black);
 }

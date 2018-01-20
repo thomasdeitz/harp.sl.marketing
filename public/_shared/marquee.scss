@@ -1,10 +1,11 @@
 .marquee {
   position:relative;
-  height: 100vh;
+  min-height: 100vh;
   overflow:hidden;
   background-color: map-get($colors, black);
   color: map-get($colors, white);
   text-align: center;
+  padding-top: 100px;
   
   .image {
     position:absolute;
@@ -29,6 +30,10 @@
     display: flex;
     flex-direction:column;
     justify-content: center;
+    
+    @media screen and (max-width: $on-palm ) {
+	    display: inline-block;
+	}
   }
 
   h1 {
@@ -38,6 +43,11 @@
 
   p {
     text-align: center;
+    &:first-of-type {
+	    @media screen and (min-width: $on-palm+1 ) {
+	    	font-size: $large-font-size;
+	    }
+    }
   }
   
   a[href="#contactUs"] {
