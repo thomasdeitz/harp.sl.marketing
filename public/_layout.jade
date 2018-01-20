@@ -4,7 +4,7 @@ html
 		meta( name="description" content="#{ description }")
 		meta( name="viewport" content="width=device-width")
 		script( src="https://kryogenix.org/code/browser/smoothscroll/smoothscroll.js")
-		script( src="../js/inView.js" )
+		script( src="../js/app.js" )
 		link( rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,300i,700,700i,900" )
 		link( rel="stylesheet" href="#{ github_deploy }/main.css" )
 		
@@ -15,12 +15,3 @@ html
 		main 
 			!= yield
 		!= partial("_shared/footer")
-	script.
-		document.onreadystatechange = function () {
-		
-			if(document.readyState === 'complete') {
-				document.getElementsByTagName('body')[0].classList.remove('loading');
-			}
-			console.log(document.readyState);
-		}
-		var allLinks = document.querySelectorAll('a[href]');
