@@ -1,15 +1,23 @@
 html
 	head
 		title= title
+		meta( charset="utf-8" )
 		meta( name="description" content="#{ description }")
-		meta( name="viewport" content="width=device-width")
+		meta( name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+		meta( property="og:title" content="#{ title }" )
+		meta( property="og:description" content="#{ description }")
+		meta( property="og:url" content="#{ github_deploy }" )
+		meta( property="og:image" content="#{ marquee_image }" )
+
 		script( src="https://kryogenix.org/code/browser/smoothscroll/smoothscroll.js")
 		script( src="#{ github_deploy }/js/app.js" )
 		link( rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,300i,700,700i,900" )
 		link( rel="stylesheet" href="#{ github_deploy }/main.css" )
+		link( rel="icon" type="image/png" href="#{ github_deploy }/assets/favicon.png" )
+
 		
 	body.loading
-		//- != partial("_shared/nav")
 		!=partial("_shared/marquee")
 		!=partial("_shared/logo")
 		main 
