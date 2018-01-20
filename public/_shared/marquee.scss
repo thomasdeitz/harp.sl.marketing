@@ -1,11 +1,16 @@
 .marquee {
   position:relative;
-  min-height: 100vh;
+  box-sizing:content-box;
+  min-height: calc(100vh - 50px);
   overflow:hidden;
   background-color: map-get($colors, black);
   color: map-get($colors, white);
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
+  
+  	display: flex;
+	flex-direction:column;
+	justify-content: center;
   
   .image {
     position:absolute;
@@ -25,17 +30,6 @@
     animation-name: kenB;
   }
 
-  .columns {
-    height:100%;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    
-    @media screen and (max-width: $on-palm ) {
-	    display: inline-block;
-	}
-  }
-
   h1 {
     font-family: $display-font-family;
     font-weight: 900;
@@ -51,8 +45,8 @@
   }
   
   a[href="#contactUs"] {
-	  background-color: map-get($colors, lightgray);
-	  color: map-get($colors, black);
+	  background-color: map-get($colors, primary);
+	  color: map-get($colors, white);
   }
 }
 

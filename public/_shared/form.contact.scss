@@ -2,22 +2,26 @@
 	font-family: $sans-font-family;
 	margin:0px;
 	
+	h2 {
+		color: map-get($colors, white)
+	}
+	
 	fieldset {
 		border:none;
 		padding: $base-padding 0px;
 	}
 
   label, article label {
-    color: rgba(map-get($colors, white), $base-opacity);
+    color: rgba(map-get($colors, white), $base-opacity*2	);
     text-align: left;
-    font-size: $small-font-size;
+    font-weight:700;
     display:inline-block;
   }
 
   textarea {
     outline: none;
     border: $border-width solid rgba(map-get($colors, white), $base-opacity);
-    font-size: $h6-font-size;
+    font-size: $base-font-size;
     width:100%;
     font-weight: 700;
     margin-top: $base-input-padding;
@@ -30,6 +34,7 @@
     
     ::placeholder {
       color: rgba(map-get($colors, black), $base-opacity);
+      font-size: $h4-font-size;
       font-weight: 700;
     }
     
@@ -69,7 +74,7 @@
 		padding:$tight-padding $base-padding;
 		border-radius: $border-radius;
 		background-color: map-get($colors, white);
-		color: map-get($colors, black);
+		color: map-get($colors, primary);
 		cursor:pointer;
 		transition: transform $base-trans-duration $base-bezier; 
 		

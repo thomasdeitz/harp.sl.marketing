@@ -11,6 +11,7 @@ body {
     h1 {
         font-size: $h1-font-size;
         font-weight: 900;
+        line-height: 1;
         @media screen and (max-width:$on-palm ) {
             font-size: $h2-font-size;
         }
@@ -65,7 +66,7 @@ a {
     transform-origin: center center;
     transition: transform $base-trans-duration $base-bezier;
     &[href="#contactUs"] {
-        background-color: map-get($colors,black);
+        background-color: map-get($colors,primary);
         border-radius: $border-radius;
         color: map-get($colors,white);
         display: inline-block;

@@ -18,6 +18,12 @@ body {
         &.black {
             background-color: map-get($colors,black);
         }
+        &.gray {
+            background-color: map-get($colors,gray);
+        }
+        &.primary {
+            background-color: map-get($colors,primary);
+        }
     }
 }
 main {
@@ -27,13 +33,14 @@ main {
 }
 article {
     text-align: justify;
+    p:first-of-type { font-size:$large-font-size; text-align: center;}
 }
 .column {
-    &:first-of-type {
+    &:first-child {
         padding-top: $base-padding*3;
     }
-    &:last-of-type {
-        padding-bottom: $base-padding*3;
+    &:last-child {
+	    padding-bottom: $base-padding*3;
     }
 }
 ul {
@@ -75,6 +82,7 @@ ul {
             height: 100px;
             margin-bottom: $base-padding;
             width: auto;
+            filter: grayscale(100%);
         }
     }
 }

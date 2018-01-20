@@ -1,4 +1,5 @@
 $colors: (
+	primary: #00a99d,
   success: rgb(21,153,46),
   warning: rgb(225,173,40),
   error: rgb(165,8,58),
@@ -29,7 +30,7 @@ $sans-font-family: "Nunito", sans-serif;
 $display-font-family: "Nunito", Impact, Helvetica, Arial, sans-serif;
 $base-font-size: 16px; //21px;
 $small-font-size: $base-font-size*.75;
-$large-font-size: $base-font-size*1.75;
+$large-font-size: $base-font-size*1.5;
 $h6-font-size: $base-font-size;
 $h5-font-size: $base-font-size*1.25;
 $h4-font-size: $base-font-size*1.75;
