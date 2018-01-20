@@ -2,8 +2,8 @@
   position:relative;
   height: 100vh;
   overflow:hidden;
-  background-color: black;
-  color:white;
+  background-color: map-get($colors, black);
+  color: map-get($colors, white);
   text-align: center;
   
   .image {
@@ -16,6 +16,7 @@
     background-position: center center;
     opacity:.3;
     transform: scale(1.01) rotate(-.5deg);
+    
     animation-duration: 40s;
     animation-fill-mode: forwards;
     animation-direction: alternate;

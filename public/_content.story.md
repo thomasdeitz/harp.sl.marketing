@@ -1,6 +1,6 @@
 ## The Story
 
-**Socialeads leverages social networks, data science and machine learning to help financial representatives find and connect with the right people at the right time.** 
+Socialeads leverages social networks, data science and machine learning to help financial representatives find and connect with the right people at the right time. 
 
 In today’s world, people of all ages are actively telling their friends, families and colleagues just about everything about themselves.  Got a new job – post it on LinkedIn and facebook.  Got a new place to live – post pictures on Instagram.  Getting married – post that too.  Having a baby – more pictures and register for gifts online.  Just about every important milestone is there for everyone to see.  
 

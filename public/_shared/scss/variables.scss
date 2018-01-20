@@ -1,28 +1,33 @@
 $colors: (
-  success: green,
-  warning: gold,
-  error: red,
+  success: rgb(21,153,46),
+  warning: rgb(225,173,40),
+  error: rgb(165,8,58),
   black: lighten(black, 15),
   gray: lighten(black, 70),
   lightgray: lighten(black, 90),
   white: white,
 );
 
+$base-opacity: .3;
+$base-bezier: cubic-bezier(0.07,-0.5,0.93,1.5);
+$base-trans_duration: .3s;
+
 $grid-config: (
   columns: 12,
   gutter-width: 4%
 );
 
-$base-padding: 3vmin;
+$base-padding: 30px;
 $tight-padding: $base-padding/2;
 $base-input-padding: $tight-padding;
 
-$border-width: .25vmin;
+$border-width: 1px;
+$border-radius: 3px;
 
 $serif-font-family: "Times New Roman", sans-serif;
 $sans-font-family: "Nunito", sans-serif;
 $display-font-family: "Nunito", Impact, Helvetica, Arial, sans-serif;
-$base-font-size: 2.75vmin; //21px;
+$base-font-size: 16px; //21px;
 $small-font-size: $base-font-size*.75;
 $large-font-size: $base-font-size*1.35;
 $h6-font-size: $base-font-size*.75;

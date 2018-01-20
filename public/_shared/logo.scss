@@ -1,7 +1,7 @@
 .logo{
 	position:relative;
 	display:block;
-	margin-bottom: 20px;;
+	margin-bottom: $base-padding;
 	left:50%;
 	width:140px;
 	height:auto;
@@ -14,11 +14,14 @@
 		top: 20px;
 	}
 	
-  .st0 {
+  .fill-one {
     fill: map-get($colors, white);
   }
 
-  .st1 {
+  .fill-two {
     fill: map-get($colors, white);
   }
+  
+	//.fill-one{fill:#265C80;}
+	//.fill-two{fill:#00A99D;}
 }
