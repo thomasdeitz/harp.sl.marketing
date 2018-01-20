@@ -1,0 +1,102 @@
+body {
+  font-family: $sans-font-family;
+  font-weight:300;
+  font-size: $small-font-size;
+  line-height:1.75;
+  color: map-get($colors, black);
+
+  @media screen and (max-width: 768px ) {
+    font-size: $small-font-size*1.5;
+  }
+}
+
+a {
+  position:relative;
+  display:inline-block;
+  color: map-get($colors, gray);
+  text-decoration: none;
+  transform-origin: center center;
+  transition: transform .2s cubic-bezier(0.07,-0.5,0.93,1.5);
+  
+  &:hover {
+    transform:scale(1.1);
+  }
+  
+  &[href="#contactUs"] {
+	  display:inline-block;
+	  padding:10px 20px;
+	  border-radius: 2px;
+	  background-color: map-get($colors, black);
+	  color: map-get($colors, white);
+  }
+}
+
+strong, b {
+  font-weight:700;
+}
+
+small {
+  font-size: $small-font-size;
+}
+
+p {
+
+  @media screen and (max-width: 768px ) {
+    font-size: $base-font-size*1.5;
+  }
+
+  article:first-of-type &:first-of-type {
+    font-size: $large-font-size;
+
+    @media screen and (max-width: 768px ) {
+      font-size: $large-font-size*1.5;
+    }
+  }
+}
+
+h1,h2,h3,h4,h5,h6 { //reset
+  margin:0;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  .marquee &, article & {
+    text-align: center;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: $h2-font-size;
+  color: map-get($colors, gray);
+  //margin-top: $h2-font-size;
+
+  & + & {
+    margin-top:0;
+  }
+}
+
+h3 {
+  text-align: center;
+  font-size: $h2-font-size;
+}
+
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: $h4-font-size;
+  color: map-get($colors, gray);
+}
+
+h5 {
+  text-align: center;
+  font-size: $h5-font-size;
+}
+
+h6 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: $h6-font-size;
+  color: map-get($colors, gray);
+}

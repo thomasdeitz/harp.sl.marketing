@@ -1,0 +1,52 @@
+{
+  "globals": {
+    "github_deploy": "https://thomasdeitz.github.io/qa.adhd-america.com",
+    "github_deploy": "",
+    "form_recipient": "msalzer@salzersoftware.com",
+    
+    "title": "Social Leads",
+    "description": "",
+    "main_navigation": [
+      {
+        "href":"",
+        "label":"Home",
+        "title":"Back to the homepage."
+      },
+      {
+        "href":"the_story",
+        "label":"Our Story",
+        "title":"Learn about our mission."
+      },
+      {
+        "href":"what_is_adhd",
+        "label":"ADHD - The Problem",
+        "title":"The Definition of ADHD"
+      },
+      {
+        "href":"the_diagnosis",
+        "label":"The Diagnosis",
+        "title":"The Diagnosis"
+      },
+      {
+        "href":"outreach",
+        "label":"Outreach",
+        "title":"Students Coaching Students"
+      },
+      {
+        "href":"impact",
+        "label":"Our Impact",
+        "title":"The Impact We Hope To Have"
+      },
+      {
+        "href":"team",
+        "label":"The Team",
+        "title":"Team ADHD America"
+      },
+      {
+        "href":"get_involved",
+        "label":"Get Involved",
+        "title":"How To Get Involved"
+      }
+    ]
+  }
+}

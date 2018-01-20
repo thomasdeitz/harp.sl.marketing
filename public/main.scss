@@ -1,0 +1,14 @@
+//Normalizes Browser imposed styles
+@import '_shared/scss/normalize';
+
+//General shared app styles
+@import '_shared/scss/variables';
+@import '_shared/scss/elements';
+@import '_shared/scss/type';
+@import '_shared/scss/grid';
+
+//Specific component styles
+@import '_shared/logo';
+@import '_shared/form.contact';
+@import '_shared/marquee';
+@import '_shared/footer';

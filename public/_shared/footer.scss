@@ -1,0 +1,7 @@
+#siteFooter {
+  background-color:map-get($colors, black);
+  color: map-get($colors, white);
+  padding: $base-padding 0;
+  text-align:center;
+  box-shadow: 0 50vh 0 50vh map-get($colors, black);
+}

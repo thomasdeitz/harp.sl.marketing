@@ -1,0 +1,24 @@
+.logo{
+	position:relative;
+	display:block;
+	margin-bottom: 20px;;
+	left:50%;
+	width:140px;
+	height:auto;
+	z-index:1;
+	transform: translateX(-50%);
+	
+	.marquee + & {
+		position:absolute;
+		z-index: 10;
+		top: 20px;
+	}
+	
+  .st0 {
+    fill: map-get($colors, white);
+  }
+
+  .st1 {
+    fill: map-get($colors, white);
+  }
+}

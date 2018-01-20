@@ -1,0 +1,17 @@
+section
+	div.container
+		article.column.col-lg-8.col-xl-8
+			!= partial("/_content.story")
+			
+section.lightgray
+	div.container
+		article.column.col-lg-8.col-xl-8
+				!= partial("/_content.works")
+			
+		article.column.col-lg-12.col-xl-12( style="text-align:center;" )
+			!= partial("/_shared/_content.list")
+
+section.black
+	div.container
+		article.column.col-lg-6.col-xl-6
+			!= partial("/_shared/form.contact")

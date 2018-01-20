@@ -1,0 +1,19 @@
+section#contactUs
+	h2 Learn More
+	form#contactForm( action="https://formspree.io/#{ form_recipient }" method="POST" )
+
+		fieldset#stepOne
+			label( for="name" ) Tell us your name
+			input( type="text" name="name" placeholder="John Doe" required )
+			
+		fieldset#stepTwo
+			label( for="_replyto") Tell us your email address
+			input( type="email" name="_replyto" placeholder="info@socialleads.com" required )
+			
+		fieldset#stepThree
+			label( for="message" ) Tell us about yourself and interest in Socialeads</label>
+			textarea( name="message" placeholder="Type your message here..." required )
+			
+		fieldset#stepFour
+			input( type="submit" value="Send")
+			input( type="hidden" name="_next" value="/" )

@@ -1,0 +1,73 @@
+#contactUs {
+	font-family: $sans-font-family;
+	
+	fieldset {
+		border:none;
+		padding: 20px 0px;
+	}
+
+  label, article label {
+    color: rgba(white, .5);
+    text-align: left;
+    font-size: $small-font-size;
+    display:inline-block;
+  }
+
+  textarea {
+    outline: none;
+    border: $border-width solid rgba(white,.2s);
+    font-size: $h6-font-size;
+    width:100%;
+    font-weight: bold;
+    margin-bottom: $base-input-padding;
+    background-color: transparent;
+    padding: $base-input-padding;
+    font-family: $sans-font-family;
+    color: map-get($colors, white);
+    height:200px;;
+    ::placeholder {
+      color: rgba(black,.2s);
+      font-weight: bold;
+    }
+  }
+  
+  input {
+    border:none;
+    border-radius: none;
+    font-weight: bold;
+    outline: none;
+    width:100%;
+    display:block;
+    border-bottom: $border-width solid rgba(white,.2s);
+    background-color:transparent;
+    color: map-get($colors, white);
+    font-size: $h4-font-size;
+    padding: $base-input-padding 0;
+    margin-bottom: $base-input-padding;
+    font-family: $sans-font-family;
+
+    ::placeholder {
+      color: rgba(black,.2);
+      font-weight: bold;
+    }
+    
+    :focus {
+	    border-bottom: $border-width solid rgba(white,1);
+    }
+    
+    &[type="submit"] {
+		display:inline-block;
+		border:0px;
+		padding:10px 20px;
+		border-radius: 2px;
+		background-color: map-get($colors, white);
+		color: map-get($colors, black);
+		cursor:pointer;
+		transition: transform .2s cubic-bezier(0.07,-0.5,0.93,1.5); 
+		
+		&:hover {
+			transform: scale(1.1);
+		}
+	  }
+  }
+}

@@ -1,0 +1,13 @@
+- var content_path = "../" + current.path.slice(0, -1).join('/') + "/_content.marquee";
+div.marquee
+	if typeof marquee_image !== 'undefined'
+		div.image( style="background-image:url(#{ marquee_image }" )
+		if typeof marquee_text !== 'undefined' || marquee_text !== undefined
+			div.container
+				div.columns.columns-12
+					h1= marquee_text
+					- console.log(marquee_text, typeof marquee_text)
+		if typeof content_path !== 'undefined'
+			div.container
+				div.columns.columns-12
+					!= partial(content_path)
