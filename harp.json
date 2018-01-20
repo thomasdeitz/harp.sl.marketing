@@ -1,11 +1,11 @@
 {
   "globals": {
-    "github_deploy": "https://thomasdeitz.github.io/qa.adhd-america.com",
+    "github_deploy": "https://thomasdeitz.github.io/sl.marketing",
     "github_deploy": "",
     "form_recipient": "msalzer@salzersoftware.com",
     
-    "title": "Social Leads",
-    "description": "",
+    "title": "Socialeads",
+    "description": "Socialeads is a social sales insights platform that goes beyond the CRM and taps directly into today's personal and professional social networks to find the right person at the right time to connect with. See. Know. Connect. Close.",
     "marquee_image": "https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb",
     "marquee_content_path": "/_content.marquee",
     "main_navigation": [
