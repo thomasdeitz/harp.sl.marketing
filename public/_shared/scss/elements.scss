@@ -44,7 +44,10 @@ ul {
     margin: 0px;
     padding: 0px;
     width: 100%;
-    flex-wrap: wrap;
+    align-content: space-around;
+   	@media screen and (max-width:$on-palm ) {
+            flex-wrap: wrap;
+        }
     li {
         background: map-get($colors,white);
         cursor: arrow;
@@ -55,10 +58,11 @@ ul {
         padding: $base-padding;
         text-align: center;
         transition: transform $base-trans_duration $base-bezier;
-        width: calc((100% / 3) - $base-padding);
+        width: calc((100% / 3) - #{$base-padding});
+        box-sizing: border-box;
         
         @media screen and (max-width:$on-palm ) {
-            width: calc(100% - $base-padding);
+            width: calc(100% - #{ $base-padding });
         }
         
         &:hover {
