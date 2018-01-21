@@ -4,6 +4,8 @@ html {
 hr {
     margin: $base-padding*2 20%;
     width: 60%;
+    border:none;
+    border-bottom: $border-width solid map-get($colors,lightgray);
 }
 body {
     opacity: 1;
@@ -17,12 +19,19 @@ body {
         }
         &.black {
             background-color: map-get($colors,black);
+            color: map-get($colors,white);
         }
         &.gray {
             background-color: map-get($colors,gray);
+            color: map-get($colors,white);
         }
         &.primary {
             background-color: map-get($colors,primary);
+            color: map-get($colors,white);
+        }
+        &.secondary {
+            background-color: map-get($colors,secondary);
+            color: map-get($colors,white);
         }
     }
 }
@@ -56,17 +65,81 @@ ul {
             flex-wrap: wrap;
         }
     li {
-        background: map-get($colors,white);
+        
         cursor: arrow;
         display: inline-block;
         list-style: none;
         margin: 0px;
         margin: $tight-padding;
-        padding: $base-padding;
         text-align: center;
         transition: transform $base-trans_duration $base-bezier;
         width: calc((100% / 3) - #{$base-padding});
         box-sizing: border-box;
+        
+        #works & {
+	        background: map-get($colors,white);
+	        padding: $base-padding;
+	        
+	        svg {
+		        width:40%;
+		        max-width: 80px;
+		        height:auto;
+		        margin-bottom: $base-padding;
+	        }
+	        
+	        &:nth-child(1) svg {
+		        .st3 { fill:map-get($colors,primary);}
+	        }
+	        
+	        &:nth-child(2) svg {
+		        .st0 { fill:map-get($colors,secondary);}
+	        }
+	        
+	        &:nth-child(3) svg {
+		        .st2 { fill:map-get($colors,black);}
+	        }
+        }
+        
+        #winner & {
+	        > * {
+		       position:relative;
+		       top: 50%;
+		       transform: translateY(-50%);
+		       width:auto;
+		       padding:0px;
+		       left:0px;
+		       margin:auto;
+		       
+		       @media screen and (max-width:$on-palm ) {
+			       margin:$base-padding auto;
+			    }
+		       
+		       
+	        }
+	        
+	        svg.logo .fill-one {
+			       fill: map-get($colors,primary) !important;
+		       }
+		       
+		       		       svg.logo .fill-two {
+			       fill: map-get($colors,secondary) !important;
+		       }
+	        
+	        &:nth-child(2) > * {
+			       height:50px;
+		       }
+		    &:nth-child(3) > * {
+			       width:80%;
+		       }
+		       
+		    @media screen and (max-width:$on-palm ) {
+            
+            &:nth-child(2) > * {
+			       height:80px;
+		       }
+        }
+
+        }
         
         @media screen and (max-width:$on-palm ) {
             width: calc(100% - #{ $base-padding });
@@ -82,7 +155,6 @@ ul {
             height: 100px;
             margin-bottom: $base-padding;
             width: auto;
-            filter: grayscale(100%);
         }
     }
 }
