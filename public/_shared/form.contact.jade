@@ -1,7 +1,7 @@
 section#contactUs
 	h2 Learn More
-	form#contactForm( action="https://formspree.io/#{ form_recipient }" method="POST" )
-
+	form#contactForm( action="#{ form_spree }" method="POST" )
+	
 		fieldset#stepOne
 			label( for="name" ) Tell us your name
 			input( type="text" name="name" placeholder="John Doe" required )
@@ -17,3 +17,4 @@ section#contactUs
 		div#stepFour(style="text-align: center;")
 			input( type="submit" value="Send")
 			input( type="hidden" name="_next" value="#{ github_deploy }/" )
+			input( type="text" name="_gotcha" style="display: none" )
