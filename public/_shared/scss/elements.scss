@@ -109,6 +109,7 @@ ul {
 		       padding:0px;
 		       left:0px;
 		       margin:auto;
+		       display:block;
 		       
 		       @media screen and (max-width:$on-palm ) {
 			       margin:$base-padding auto;
@@ -121,15 +122,15 @@ ul {
 			       fill: map-get($colors,primary) !important;
 		       }
 		       
-		       		       svg.logo .fill-two {
+		       svg.logo .fill-two {
 			       fill: map-get($colors,secondary) !important;
 		       }
 	        
 	        &:nth-child(2) > * {
-			       height:50px;
+			       height:80px;
 		       }
 		    &:nth-child(3) > * {
-			       width:80%;
+			       width:70%;
 		       }
 		       
 		    @media screen and (max-width:$on-palm ) {
