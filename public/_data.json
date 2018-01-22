@@ -2,5 +2,8 @@
   "index": {},
   "404": {
     "marquee_content_path": "/_content.marquee.404"
+  },
+  "success": {
+	"marquee_content_path": "/_content.marquee.success"
   }
 }

@@ -48,3 +48,30 @@
 		transform:translateX(-50%) rotateZ(45deg);
 	}
 }
+
+span.check {
+	position:relative;
+	display:inline-block;
+	z-index:1000;
+	width:$base-padding*1.5;
+	height:$base-padding*1.5;
+	border-radius: 50%;
+	border: $border-width solid map-get($colors,white);
+	box-shadow: 0px 0px 10px -3px map-get($colors,black);
+	transition: opacity $base-trans-duration $base-bezier;
+	cursor: pointer;
+	
+	&:after {
+		content:"";
+		pointer-events: none;
+		position:absolute;
+		height:15%;
+		width:30%;
+		border-left: $border-width solid map-get($colors,white);
+		border-bottom: $border-width solid map-get($colors,white);
+		top:35%;
+		left:50%;
+		transform-origin: center center;
+		transform:translateX(-50%) rotateZ(-45deg);
+	}
+}
