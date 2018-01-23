@@ -1,62 +1,13 @@
 {
   "globals": {
     "github_deploy": "",
-    
     "env": "prod",
-    "form_spree": "https://formspree.io/xqqkjqrx",
-
-    "env": "staging",
-    "form_spree": "https://formspree.io/mywyqzdm",
-    
-    "env": "local",
-    "form_spree": "",
-    
+    "form_spree": "https://formspree.io/xqqkjqrx",    
     "title": "Socialeads",
     "description": "Socialeads taps directly into today’s personal and professional social networks to find the right person at the right time to connect with.",
     "marquee_image": "https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb",
     "marquee_content_path": "/_content.marquee",
     "marquee_class": "",
-    "main_navigation": [
-      {
-        "href":"",
-        "label":"Home",
-        "title":"Back to the homepage."
-      },
-      {
-        "href":"the_story",
-        "label":"Our Story",
-        "title":"Learn about our mission."
-      },
-      {
-        "href":"what_is_adhd",
-        "label":"ADHD - The Problem",
-        "title":"The Definition of ADHD"
-      },
-      {
-        "href":"the_diagnosis",
-        "label":"The Diagnosis",
-        "title":"The Diagnosis"
-      },
-      {
-        "href":"outreach",
-        "label":"Outreach",
-        "title":"Students Coaching Students"
-      },
-      {
-        "href":"impact",
-        "label":"Our Impact",
-        "title":"The Impact We Hope To Have"
-      },
-      {
-        "href":"team",
-        "label":"The Team",
-        "title":"Team ADHD America"
-      },
-      {
-        "href":"get_involved",
-        "label":"Get Involved",
-        "title":"How To Get Involved"
-      }
-    ]
+    "main_navigation": []
   }
 }
