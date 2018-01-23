@@ -1,9 +1,12 @@
 {
   "index": {},
   "404": {
-    "marquee_content_path": "/_content.marquee.404"
+    "marquee_content_path": "/_content.marquee.404",
+    "marquee_image": "https://images.pexels.com/photos/220147/pexels-photo-220147.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb"
   },
   "success": {
-	"marquee_content_path": "/_content.marquee.success"
+	"marquee_content_path": "/_content.marquee.success",
+	"marquee_image": "https://static.pexels.com/photos/362/marketing-man-person-communication.jpg",
+	"marquee_class": "secondary-dark"
   }
 }

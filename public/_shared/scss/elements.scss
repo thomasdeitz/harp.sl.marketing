@@ -13,7 +13,7 @@ body {
     &.loading {
         opacity: 0;
     }
-    section {
+    section, .marquee {
         &.lightgray {
             background-color: map-get($colors,lightgray);
         }
@@ -31,6 +31,10 @@ body {
         }
         &.secondary {
             background-color: map-get($colors,secondary);
+            color: map-get($colors,white);
+        }
+        &.secondary-dark {
+            background-color: mix(map-get($colors,secondary), black, 50);
             color: map-get($colors,white);
         }
     }
@@ -181,3 +185,18 @@ li {
     opacity: 0;
     transform: scale(.5);
 }
+
+a.button {
+	display:inline-block;
+	border:0px;
+	padding:$tight-padding $base-padding;
+	border-radius: $border-radius;
+	background-color: map-get($colors, white);
+	color: map-get($colors, black);
+	cursor:pointer;
+	transition: transform $base-trans-duration $base-bezier; 
+	
+	&:hover {
+		transform: scale(1.1);
+	}
+  }
