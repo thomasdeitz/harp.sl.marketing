@@ -1,7 +1,7 @@
 {
   "globals": {
     "github_deploy": "",
-    "env": "staging",
+    "env": "dev",
     "form_spree": "",    
     "title": "Socialeads",
     "description": "Socialeads taps directly into today’s personal and professional social networks to find the right person at the right time to connect with.",
