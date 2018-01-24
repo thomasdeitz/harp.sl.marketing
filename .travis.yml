@@ -1,8 +1,6 @@
 language: node_js
 node_js:
-- '7'
-verbose: true
-os: linux
+- '--lts'
 before_script:
 - npm install -g harp
 - chmod +x ./deploy.sh
