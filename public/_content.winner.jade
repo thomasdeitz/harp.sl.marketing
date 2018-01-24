@@ -5,11 +5,13 @@ section#winner
 
 			ul
 				li
-					!= partial( "/_shared/logo.nm" )
+					a(href="https://www.northwesternmutual.com" title="Northwestern Mutual" target="_blank")
+						!= partial( "/_shared/logo.nm" )
 				li 
 					img( alt="Northwestern Mutual - Reverse Pitch" src="#{ github_deploy }/assets/nmRevPitch.png" )
 				li
-					!= partial( "/_shared/logo" )
+					a(href="#theStory" title="The Story")
+						!= partial( "/_shared/logo" )
 
 		article.column.col-lg-8.col-xl-8
 			hr
