@@ -9,6 +9,8 @@ ORIGIN_URL_WITH_CREDENTIALS=${ORIGIN_URL/\/\/github.com/\/\/$GITHUB_TOKEN@github
 TARGET_URL=$T_URL
 TARGET_URL_WITH_CREDENTIALS=${TARGET_URL/\/\/github.com/\/\/$GITHUB_TOKEN@github.com}
 
+echo $T_URL
+echo $ORIGIN_URL
 echo "Compiling new static content"  
 mkdir $TEMP_DIRECTORY || exit 1
 
@@ -18,13 +20,12 @@ cd staging.sl.marketing
 git checkout master
 cd ../
 
-echo $TARGET_URL_WITH_CREDENTIALS
-
 harp compile harp.sl.marketing staging.sl.marketing
 cd staging.sl.marketing
 git checkout CNAME
 git add -A
 git commit --allow-empty -m "Regenerated static content for $CURRENT_COMMIT" || exit 1 
+git push --force --quiet "$TARGET_URL_WITH_CREDENTIALS"
 
 echo "Cleaning up temp files"  
 rm -Rf staging.sl.marketing
