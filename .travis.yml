@@ -3,4 +3,5 @@ node_js: ['0.10']
 before_script:
   - npm install -g harp
   - chmod +x ./deploy.sh
+script: gulp process-all
 after_success: ./deploy.sh
