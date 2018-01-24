@@ -1,6 +1,8 @@
 language: node_js
 node_js:
 - '0.10'
+verbose: true
+os: linux
 before_script:
 - npm install -g harp
 - chmod +x ./deploy.sh
