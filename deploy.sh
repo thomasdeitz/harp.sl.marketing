@@ -7,7 +7,7 @@ TARGET=$STAGING_TARGET
 echo $TRAVIS_REPO_SLUG
 echo "Targeting $TARGET repository"
 
-CURRENT_REPO_SLUG=(${TRAVIS_REPO_SLUG//\/\/ })
+CURRENT_REPO_SLUG=$TRAVIS_REPO_SLUG | cut -d "/" -f 2
 CURRENT_COMMIT=`git rev-parse HEAD`
 TARGET_URL='https://github.com/thomasdeitz/'$TARGET'.git'
 TARGET_URL_WITH_CREDENTIALS=${TARGET_URL/\/\/github.com/\/\/$GITHUB_TOKEN@github.com}
