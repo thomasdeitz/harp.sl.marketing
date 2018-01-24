@@ -1,22 +1,21 @@
 #!/bin/bash
-echo "Starting deployment"  
-echo "Target: staging.sl.marketing(staging.socialeads.com) repo"
+https://github.com/thomasdeitz/staging.sl.marketing.git
+echo "Starting deployment" 
+echo "Getting deployment target."
 
-TEMP_DIRECTORY="/tmp/__temp_static_content"  
-CURRENT_COMMIT=`git rev-parse HEAD`  
-ORIGIN_URL=`git config --get remote.origin.url`  
-ORIGIN_URL_WITH_CREDENTIALS=${ORIGIN_URL/\/\/github.com/\/\/$GITHUB_TOKEN@github.com}
-TARGET_URL=$T_URL
+TARGET=$STAGING_TARGET
+echo $TRAVIS_REPO_SLUG
+echo "Targeting $TARGET repository"
+
+CURRENT_COMMIT=`git rev-parse HEAD`
+TARGET_URL='https://github.com/thomasdeitz/'$TARGET'.git'
 TARGET_URL_WITH_CREDENTIALS=${TARGET_URL/\/\/github.com/\/\/$GITHUB_TOKEN@github.com}
 
-echo $T_URL
-echo $ORIGIN_URL
-echo "Compiling new static content"  
-mkdir $TEMP_DIRECTORY || exit 1
+echo "Compiling new static content"
 
 cd ../
 git clone $TARGET_URL
-cd staging.sl.marketing
+cd $TARGET
 git checkout master
 cd ../
 
