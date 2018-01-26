@@ -1,0 +1,13 @@
+section#team
+	div.container
+		div.column.col-lg-10.col-xl-10
+			h2 The Team
+			ul
+				for member in team
+					li
+						a(href="#{ member.linkedin }" title="#{ member.firstName } #{ member.lastName }" target="_blank")
+							figure(style="border-radius: 50%; height:128px; width:128px; display:inline-block; overflow:hidden; padding:0px;")
+								img(src="#{ member.headShot }" alt="#{ member.firstName } #{ member.lastName }" style="position:relative; left:50%; transform: translateX(-50%);height:100%; width:auto;")
+							figcaption
+								strong= member.firstName+' '+member.lastName
+								small= member.title
