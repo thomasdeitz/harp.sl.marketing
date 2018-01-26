@@ -15,6 +15,11 @@
 		    "slug": "facebook",
 		    "un": "SocialeadsApp",
 		    "url": "https://www.facebook.com/SocialeadsApp"
+	    },
+	    {
+		    "slug": "linkedin",
+		    "un": "socialeadsapp",
+		    "url": "https://www.linkedin.com/company/socialeadsapp"
 	    }
 	],
     "marquee_image": "https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb",
