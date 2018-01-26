@@ -5,6 +5,18 @@
     "form_spree": "",    
     "title": "Socialeads - Unlock the power of your network.",
     "description": "Socialeads taps directly into today’s personal and professional social networks to find the right person at the right time to connect with.",
+    "social": [
+	    {
+		    "slug": "twitter",
+	    	"un": "SocialeadsApp",
+	    	"url": "https://twitter.com/SocialeadsApp"
+	   	},
+	    {
+		    "slug": "facebook",
+		    "un": "SocialeadsApp",
+		    "url": "https://www.facebook.com/SocialeadsApp"
+	    }
+	],
     "marquee_image": "https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb",
     "marquee_content_path": "/_content.marquee",
     "marquee_class": "",

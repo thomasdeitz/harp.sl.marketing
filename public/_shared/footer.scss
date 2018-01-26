@@ -4,4 +4,10 @@
   padding: $base-padding 0;
   text-align:center;
   box-shadow: 0 50vh 0 50vh map-get($colors, black);
+  
+  svg:not(.logo) {
+	  height:30px;
+	  width:auto;
+	  padding: $tight-padding;
+  }
 }
