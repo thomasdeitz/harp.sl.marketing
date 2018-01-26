@@ -3,3 +3,7 @@ footer#siteFooter
 		div.col-12
 			!= partial("logo")
 			small &copy;#{ new Date().getFullYear() } Socialeads All Rights Reserved.
+			div
+				for app in social
+					a(href="#{ app.url }" target="_blank")
+						!= partial("logo."+app.slug)
