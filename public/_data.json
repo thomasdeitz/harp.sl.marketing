@@ -42,5 +42,8 @@
 	"marquee_content_path": "/_content.marquee.success",
 	"marquee_image": "https://static.pexels.com/photos/362/marketing-man-person-communication.jpg",
 	"marquee_class": "secondary-dark"
+  },
+  "privacy_policy": {
+    "layout": "_layout.simple"
   }
 }

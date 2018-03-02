@@ -38,3 +38,14 @@ $h4-font-size: $base-font-size*1.75;
 $h3-font-size: $base-font-size*2;
 $h2-font-size: $base-font-size*2.5;
 $h1-font-size: $base-font-size*3;
+
+$on-desktop: 1280px;
+$on-laptop: 1024px;
+$on-palm: 768px;
+
+$breakpoints: ( //list small to large.
+  sm : ( ul: $on-palm ),
+  md : ( ll: $on-palm, ul: #{$on-laptop} - 1 ),
+  lg : ( ll: $on-laptop, ul: #{$on-desktop} - 1 ),
+  xl : ( ll: $on-desktop )
+);

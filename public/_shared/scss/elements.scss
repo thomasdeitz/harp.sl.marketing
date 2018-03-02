@@ -39,10 +39,52 @@ body {
         }
     }
 }
+
 main {
     background-color: map-get($colors,white);
     box-shadow: 0px 0px 40px rgba(black,.2);
     width: 100vw;
+    
+    &#simple {
+	    text-align:left;
+	    text-align:left !important;
+	    .logolink { display:block; border-bottom:1px solid map-get($colors,lightgray);}
+	    .column:first-child {
+		    padding-top:0px;
+	    }
+	    svg {
+		    padding-top:20px;
+		    .type .fill-one, .type .fill-two {
+		    	fill: map-get($colors,black)
+	    	}
+				.brain .fill-one, .brain .fill-two {
+		    	fill: map-get($colors,primary)
+	    	}
+	    }
+	    strong { font-weight:700;}
+	    h5 { margin-top: 3em; margin-bottom: 0	em;}
+      ul {
+	      box-sizing: border-box;
+	      padding: 20px;
+	      font-size: $small-font-size;
+	      background-color: map-get($colors,lightgray);
+        display: block;
+        text-align:left;
+        li {
+	        box-sizing: border-box;
+	        list-style: disc;
+          display:list-item;
+          text-align:left;
+          width:100%;
+          opacity:1;
+          transform: scale(1);
+          
+          li {
+	          list-style: circle;
+          }
+        }
+      }
+    }
 }
 article {
     text-align: justify;

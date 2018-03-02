@@ -19,10 +19,13 @@ if current.path != "robots.txt"
 	
 		!=partial("_shared/gtag")
 		body.loading
-			!=partial("_shared/marquee")
-			!=partial("_shared/logo")
-			main#marketing
-				!= yield
+			main#simple
+				a.logolink(href="/")
+					!=partial("_shared/logo")
+				section
+					div.container
+						div.column.col-lg-10.col-xl-8
+							!= yield
 			!= partial("_shared/footer")
 else
 	!= yield
