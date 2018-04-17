@@ -12,10 +12,10 @@ if current.path != "robots.txt"
 			meta( property="og:image" content="#{ marquee_image }" )
 	
 			script( src="https://kryogenix.org/code/browser/smoothscroll/smoothscroll.js")
-			script( src="#{ github_deploy }/js/app.js" )
+			script( src="#{ github_deploy }/assets/js/app.js" )
 			link( rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,300i,700,700i,900" )
 			link( rel="stylesheet" href="#{ github_deploy }/main.css" )
-			link( rel="icon" type="image/png" href="#{ github_deploy }/assets/favicon.png" )
+			link( rel="icon" type="image/png" href="#{ github_deploy }/assets/images/favicon.png" )
 	
 		!=partial("_shared/gtag")
 		body.loading
