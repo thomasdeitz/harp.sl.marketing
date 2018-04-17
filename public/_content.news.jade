@@ -1,9 +1,0 @@
-section#news.lightgray
-	div.container
-		article.column.col-lg-10.col-xl-10
-			h2 In the News
-			for article in news
-				a(href="#{ article.url }" title="Read #{ article.outlet } Article" target="_blank")
-					h4= article.headline
-					p= article.leader
-					img(src="#{ article.outletBrand }" alt="#{ article.outlet } | #{ article.headline }" style="filter: grayscale(100%); height:auto; width: 60%;")

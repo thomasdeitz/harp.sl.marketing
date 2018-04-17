@@ -13,7 +13,7 @@
 	  ],
 	  "team": [
 		  {
-			  "headShot": "./assets/lhitchcock.jpg",
+			  "headShot": "/assets/images/lhitchcock.jpg",
 			  "firstName": "Larry",
 			  "lastName": "Hitchcock",
 			  "title": "CEO and Co-Founder",
